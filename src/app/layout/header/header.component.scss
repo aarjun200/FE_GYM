@@ -1,0 +1,28 @@
+
+.logo_img{
+    width: 36px;
+    border-radius: 50%;
+}
+.fontt{
+    font-family: 'kaushan' !important;
+}
+
+.icon-color{
+    color: #bfbfbf  !important;
+}
+ span {
+    color: white !important;
+    font-family: 'abel';
+}
+
+nav:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px); /* Apply a blur filter to the area behind the header */
+    z-index: -1; /* Make the blurred area appear behind the content */
+  }

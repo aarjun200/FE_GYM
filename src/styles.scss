@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'kaushan';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./assets/fonts/kaushan/KaushanScript-Regular.ttf') format('truetype'); /* Replace with your font file name and format */
+  }
+  :root {
+    // --primary-color: #7dae3c;
+    --primary-color: #ffeb04;
+    --primary-text-color: black;
+    --primary-theme-color: #000000cf;
+    
+  }
+  @font-face {
+    font-family: 'abel';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./assets/fonts/Abel/Abel-Regular.ttf') format('truetype'); /* Replace with your font file name and format */
+  }
+    
+  .back{
+
+    background: url('assets/images/image-gallery/loho.gif') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+    // background-image: url('assets/images/image-gallery/loho.gif');
+    // background-position: 50% -23px;
+    // background-repeat: repeat;
+    // background-size: 100%;
+}
+
+.btn_clr {
+  background-color: var(--primary-color) !important;
+}
+.btn_clr {
+  background-color: var(--primary-color) !important;
+}
+.edit_icon{
+  width: 18px;
+
+}
+.edit_icon{
+
+}
+

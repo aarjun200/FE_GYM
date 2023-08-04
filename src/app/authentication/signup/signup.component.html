@@ -1,0 +1,145 @@
+<div style="overflow: hidden">
+  <div
+    id="wbc-64299ac63128a"
+    data-parallax-speed="0.4"
+    class="row wpb_row back full-height full-width-section parallax-section bg-cover-stretch"
+    data-section-height="754px"
+  >
+    <div class="container">
+      <div class="row row-inner">
+        <div class="wbc-table-align clearfix">
+          <div class="clearfix flx align-middle mob_padding">
+            <div class="wpb_column vc_column_container col-sm-8 hide">
+              <div class="column-inner">
+                <div class="wpb_wrapper">
+                  <div class="wbc-heading clearfix">
+                    <h3
+                      class="special-heading-1 neww"
+                      style="font-size: 30px; color: #ffffff"
+                    >
+                      The Gym
+                    </h3>
+                  </div>
+                  <div class="wbc-heading clearfix">
+                    <h2
+                      class="special-heading-3 tile xs-responsive-text-35 sm-responsive-text-55"
+                     
+                    >
+                      WORK HARD<br />
+                      GET <span class="wbc-color">RESULTS</span>
+                    </h2>
+                  </div>
+                  <div class="wbc-heading clearfix">
+                    <div
+                      class="default-heading neww detail"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="wpb_column vc_column_container col-sm-4 mob_width">
+              <div class="column-inner">
+                <div class="wpb_wrapper">
+                  <div class="col-12 auth-form-section">
+                    <div class="form-section">
+                      <div class="auth-wrapper">
+                        <h2 class="login-title"> Sign Up </h2>
+                        <p class="auth-signup-text text-muted">Enter details to create your account</p>
+                        <form class="validate-form" [formGroup]="authForm" (ngSubmit)="onSubmit()">
+                          <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                              <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Username</mat-label>
+                                <input matInput formControlName="username" required>
+                                <mat-icon matSuffix>face</mat-icon>
+                                <mat-error *ngIf="authForm.get('username').hasError('required')">
+                                  Username is required
+                                </mat-error>
+                              </mat-form-field>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xl-12col-lg-12 col-md-12 col-sm-12 mb-2">
+                              <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Email</mat-label>
+                                <input matInput formControlName="email" required>
+                                <mat-icon matSuffix>mail</mat-icon>
+                                <mat-error *ngIf="authForm.get('email').hasError('required') || authForm.get('email').touched">
+                                  Please enter a valid email address
+                                </mat-error>
+                              </mat-form-field>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xl-12col-lg-12 col-md-12 col-sm-12 mb-2">
+                              <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Password</mat-label>
+                                <input matInput formControlName="password" [type]="hide ? 'password' : 'text'" required>
+                                <mat-icon matSuffix (click)="hide = !hide">
+                                  {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                <mat-error *ngIf="authForm.get('password').hasError('required')">
+                                  Password is required
+                                </mat-error>
+                              </mat-form-field>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xl-12col-lg-12 col-md-12 col-sm-12 mb-2">
+                              <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Confirm Password</mat-label>
+                                <input matInput formControlName="cpassword" [type]="chide ? 'password' : 'text'" required>
+                                <mat-icon matSuffix (click)="chide = !chide">
+                                  {{chide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                <mat-error *ngIf="authForm.get('cpassword').hasError('required')">
+                                  Confirm Password is required
+                                </mat-error>
+                              </mat-form-field>
+                            </div>
+                          </div>
+                          <div class="flex-sb-m w-full  p-b-20">
+                            <div>
+                              <span class="detial">Already Registered? <a routerLink="/authentication/signin">
+                                  Login
+                                </a></span>
+                            </div>
+                          </div>
+                          <div class="container-auth-form-btn">
+                            <button mat-flat-button color="primary" class="auth-form-btn btn_lb"  type="submit">
+                              Register
+                            </button>
+                          </div>
+                        </form>
+                        <h6 class="social-login-title">OR</h6>
+                        <ul class="list-unstyled social-icon mb-0 mt-3">
+                          <li class="list-inline-item"><a href="javascript:void(0)" class="rounded">
+                              <i class="fab fa-google"></i>
+                            </a></li>
+                          <li class="list-inline-item"><a href="javascript:void(0)" class="rounded flex-c-m">
+                              <i class="fab fa-facebook-f"></i>
+                            </a></li>
+                          <li class="list-inline-item"><a href="javascript:void(0)" class="rounded">
+                              <i class="fab fa-twitter"></i>
+                            </a></li>
+                          <li class="list-inline-item"><a href="javascript:void(0)" class="rounded">
+                              <i class="fab fa-linkedin-in"></i>
+                            </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

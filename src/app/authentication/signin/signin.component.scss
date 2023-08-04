@@ -1,0 +1,188 @@
+.parallax-section, .wpb_row.parallax-section, .wpb_row.video-section {
+    margin-bottom: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: none!important;
+}
+.back{
+    background-image: url(../../../assets/images/image-gallery/gym.jpg);
+    background-color: rgb(42, 38, 39);
+    background-position: 50% -23px;
+}
+.login-title {
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'abel';
+    font-weight: 700;
+    font-size: 30px;
+}
+.wpb_row.full-width-section {
+    margin-bottom: 0;
+}
+.auth-form-section {
+    background-color: transparent !important;
+}
+.wpb_row.parallax-section {
+    background-position: center top;
+}
+.bg-cover-stretch{
+    overflow: hidden;
+}
+.flx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 62px;
+    height: 100vh;
+}
+.bg-cover-stretch {
+    -ms-background-size: cover!important;
+    background-size: cover!important;
+}
+.tex_colr{
+    color: var(--primary-text-color) !important;
+}
+.wbc-color{
+    color: var(--primary-color);
+}
+.auth-signup-text {
+    font-size: 18px;
+    /* color: #000; */
+    padding-bottom: 20px;
+    width: 410px;
+    max-width: 100%;
+    margin-top: -10px;
+    font-family: 'abel';
+}
+.example-full-width{
+    color: white;
+    border-color: red !important
+}
+.welcome-msg {
+    font-weight: 500;
+    color: white;
+    font-family: 'kaushan';
+    font-size: 38px;
+    margin-left: -8px;
+}
+::ng-deep  .mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: #ffffff21 !important;
+    border-radius: 10px !important;
+}
+.btn_lb{
+    background-color: var(--primary-color);
+    font-size: 27px !important;
+    font-family: 'abel';
+}
+.neww{
+    font-family: "abel";
+}
+.form-check .form-check-label {
+    cursor: pointer;
+    padding-left: 25px;
+    position: relative;
+    padding-right: 15px;
+    color: #96a2b4 !important;
+}
+mat-form-field{
+    color: white;
+}
+mat-icon{
+    color: white;
+}
+mat-label {
+    color: white;
+}
+.detail{
+    color: #ffffff;
+    margin-bottom: 45px;
+    max-width: 600px;
+    font-size: 17px;
+}
+.tile{
+    font-size: 65px;
+    line-height: 60px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    max-width: 500px;
+    font-family: sans-serif;
+    font-weight: 700;
+    word-spacing: -1px;
+    letter-spacing: -3px;
+}
+.wpb_row {
+    position: relative;
+}
+.full-height {
+    min-height: 100vh;
+}
+.vc_row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.wbc-table-align {
+    display: table;
+    height: 100vh;
+    width: 100%;
+}
+.wbc-table-cell-align.align-middle {
+    vertical-align: middle;
+}
+
+.wbc-table-cell-align {
+    display: table-cell;
+    width: 100%;
+}
+
+.column_container>.column-inner {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.column-inner {
+    position: relative;
+    height: 100%;
+}
+.wpb_wrapper {
+    position: relative;
+}
+.special-heading-1 {
+    font-size: 50px;
+    font-family: Roboto,arial,sans-serif;
+    font-weight: 100;
+    letter-spacing: -.03em;
+    margin-top: 0;
+}
+
+@media (max-width: 500px) {
+.hide{
+    display: none !important;
+}
+.mob_padding{
+    padding: 0px !important;
+}
+.mob_width{
+    width: 80%;
+}
+}
+.form-check .form-check-sign .check {
+    border: 1px solid rgb(255 248 248 / 54%);
+}
+
+.social-icon li a {
+    color: #b8afaf;
+    border: 1px solid #b8afaf;
+}
+li a:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.sign-up-link {
+    color: var(--primary-color);
+}
+a {
+    color: var(--primary-color);
+}

@@ -1,0 +1,147 @@
+<section class="content">
+  <div class="content-block">
+    <div class="block-header">
+      <!-- breadcrumb -->
+      <app-breadcrumb [title]="'Dashboad'" [items]="[]" [active_item]="'Dashboad'"></app-breadcrumb>
+    </div>
+    <!-- Widgets -->
+    <div class="row">
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="card card-statistic-2">
+          <div class="clearfix">
+            <div class="card-icon shadow-primary bg-purple">
+              <i class="material-icons align-middle">face</i>
+            </div>
+            <div class="card-right">
+              <div>
+                <h5 class="float-end">Fee Pending Users</h5>
+              </div>
+              <div class="m-r-10 m-l-10">
+                <h3 class="font-weight-bold float-end mb-0"> 5</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card-chart">
+            <canvas baseChart [chartType]="'line'" [datasets]="cardChart1Data" [labels]="cardChart1Label"
+              [options]="cardChart1" [legend]="true">
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="card card-statistic-2">
+          <div class="clearfix">
+            <div class="card-icon shadow-primary bg-orange">
+              <i class="material-icons align-middle">content_cut</i>
+            </div>
+            <div class="card-right">
+              <div>
+                <h5 class="float-end">Trainers</h5>
+              </div>
+              <div class="m-r-10 m-l-10">
+                <h3 class="font-weight-bold float-end mb-0"> 10</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card-chart">
+            <canvas baseChart [chartType]="'line'" [datasets]="cardChart2Data" [labels]="cardChart2Label"
+              [options]="cardChart2" [legend]="true">
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="card card-statistic-2">
+          <div class="clearfix">
+            <div class="card-icon shadow-primary bg-green">
+              <i class="material-icons align-middle">person_add</i>
+            </div>
+            <div class="card-right">
+              <div>
+                <h5 class="float-end">New Users</h5>
+              </div>
+              <div class="m-r-10 m-l-10">
+                <h3 class="font-weight-bold float-end mb-0"> 20</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card-chart">
+            <canvas baseChart [chartType]="'line'" [datasets]="cardChart3Data" [labels]="cardChart3Label"
+              [options]="cardChart3" [legend]="true">
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="card card-statistic-2">
+          <div class="clearfix">
+            <div class="card-icon shadow-primary bg-blue">
+              <i class="material-icons align-middle">local_activity</i>
+            </div>
+            <div class="card-right">
+              <div>
+                <h5 class="float-end">Earning</h5>
+              </div>
+              <div class="m-r-10 m-l-10">
+                <h3 class="font-weight-bold float-end mb-0"> ₹20,125</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card-chart">
+            <canvas baseChart [chartType]="'line'" [datasets]="cardChart4Data" [labels]="cardChart4Label"
+              [options]="cardChart4" [legend]="true">
+            </canvas>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- #END# Widgets -->
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>
+              Gym Survay</h2>
+            <button mat-button [matMenuTriggerFor]="menu" class="header-dropdown">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Action</button>
+              <button mat-menu-item>Another action</button>
+              <button mat-menu-item>Something else here</button>
+            </mat-menu>
+          </div>
+          <div class="body">
+            <apx-chart [series]="areaChartOptions.series" [chart]="areaChartOptions.chart"
+              [xaxis]="areaChartOptions.xaxis" [yaxis]="areaChartOptions.yaxis" [colors]="areaChartOptions.colors"
+              [stroke]="areaChartOptions.stroke" [legend]="areaChartOptions.legend" [tooltip]="areaChartOptions.tooltip"
+              [dataLabels]="areaChartOptions.dataLabels"></apx-chart>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2>Monthly Report</h2>
+            <button mat-button [matMenuTriggerFor]="menu" class="header-dropdown">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item>Action</button>
+              <button mat-menu-item>Another action</button>
+              <button mat-menu-item>Something else here</button>
+            </mat-menu>
+          </div>
+          <div class="body">
+            <apx-chart [series]="barChartOptions.series" [chart]="barChartOptions.chart"
+              [dataLabels]="barChartOptions.dataLabels" [plotOptions]="barChartOptions.plotOptions"
+              [responsive]="barChartOptions.responsive" [xaxis]="barChartOptions.xaxis"
+              [tooltip]="barChartOptions.tooltip" [legend]="barChartOptions.legend" [fill]="barChartOptions.fill">
+            </apx-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
